@@ -26,7 +26,7 @@ async function insertParagraph() {
 
 
     const nonInclusiveList = ['master', 'Slave', 'Blacklist', 'Whitelist', 'Native', 'Non-native', 'Non native','man hours', 'man-hours', 'man days', 'man-days','sanity check', 'insanity check', 'dummy variable', 'stonith', 'kill', 'one throat to check'];
-    const inclusiveList= [' primary', ' secondary', ' deny list', ' allow list', ' original', ' non-original', ' non original', ' work hours',' work-hours', ' work days', ' work-days', ' confidence check', ' confidence check', ' indicator variable', ' hardware redundancy', ' discontinue', ' single point of contact'];
+    const inclusiveList= [' primary', ' secondary', ' deny list', ' allow list', ' original', ' non-original', ' non original', ' work hours',' work-hours', ' workdays', ' workdays', ' confidence check', ' confidence check', ' indicator variable', ' hardware redundancy', ' discontinue', ' single point of contact'];
 
     for (let i = 0; i < nonInclusiveList.length; i++) {
 
@@ -51,8 +51,9 @@ async function insertParagraph() {
   } //main for loop
   
     
-
+     
       await context.sync();
+     
   })
   .catch(function (error) {
     
